@@ -1,5 +1,4 @@
-Module.register("MMM;
--CatFact", {
+Module.register("MMM-CatFact", {
   defaults: {
     category: "Programming",
     fetchInterval: 10 * 1000
@@ -8,7 +7,7 @@ Module.register("MMM;
     return [this.file("style.css")];
   },
   fact: null,
-  notoficationReceived(notification, payload, sender) {
+  notificationReceived(notification, payload, sender) {
     if (notification === "MODULE_DOM_CREATED") {
       this.getFact();
       setInterval(() => {
