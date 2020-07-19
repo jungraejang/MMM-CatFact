@@ -1,4 +1,5 @@
-Module.register("MMM-CatFact", {
+Module.register("MMM;
+-CatFact", {
   defaults: {
     category: "Programming",
     fetchInterval: 10 * 1000
